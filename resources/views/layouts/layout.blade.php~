@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ $title }}</title>
+    @extends('layouts.fixed_imports')
+  </head>
+  <body>
+    @extends ('layouts.header', $header)
+    
+    <div class="flex-center position-ref full-height">
+      @yield('content')
+    </div>
+    
+    @extends ('layouts.footer')
+  </body>
+</html>

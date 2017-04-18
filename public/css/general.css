@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+#headerLink {
+    text-decoration: none;
+    color: #000;
+}
+
+html, body {
+    padding-top: 70px;
+    height: 100vh;
+    margin: 0;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.full-height {
+    height: 35vh;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+    font-family: 'Love Ya Like A Sister', serif;
+}
