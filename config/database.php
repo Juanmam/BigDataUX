@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,6 +53,18 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+
+	'mongodb' => [array(
+	            'driver' => 'mongodb',
+		    'host' => env('DB_HOST', '10.131.137.188'),
+	            'port' => env('DB_PORT', 27017),
+                    'database' => env('DB_DATABASE', 'grupo_12'),
+	            'username' => env('DB_USERNAME', 'user1'),
+                    'password' => env('DB_PASSWORD', 'eafit.2017'),
+	            'options' => array(
+		    	      'db' => 'admin' // sets the authentication database required by mongo 3
+                    )
+        )],
 
         'pgsql' => [
             'driver' => 'pgsql',
