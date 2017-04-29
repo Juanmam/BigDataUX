@@ -34,7 +34,7 @@ return [
                     'database' => env('DB_DATABASE', 'grupo_12'),
 	            'username' => env('DB_USERNAME', 'user1'),
                     'password' => env('DB_PASSWORD', 'eafit.2017'),
-		    'options' => [ 'database' => 'admin'],
+		    'options' => [ 'database' => 'grupo_12'],
         ],
 
         'pgsql' => [
