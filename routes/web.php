@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('search');
-});
+Route::get('/','SearchController@view');
 
 Route::get('/result','QueryController@view');
 

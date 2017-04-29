@@ -9,7 +9,7 @@
   <div class="title">
     Boople
   </div>
-  {{ Form::open(array('url' => '/searching')) }}
+  {{ Form::open(array('url' => '/searching', 'method' => 'POST')) }}
   {{ Form::text('word','Example: Food') }}
   <br><br>
   {{ Form::submit('Search') }}

@@ -1,0 +1,6 @@
+//$results = DB::collection('felipe')->where('word', 'someth\
+ing')->first();
+          $db = \DB::connection('mongodb')->getMongoClient();
+	            //$results = DB::connection('mongodb')->collection('felipe')\
+		    ->get();
+		    

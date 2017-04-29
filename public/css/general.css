@@ -34,7 +34,27 @@ html, body {
     text-align: center;
 }
 
+.content-list {
+    text-align: left;
+}
+
 .title {
     font-size: 84px;
     font-family: 'Love Ya Like A Sister', serif;
+}
+
+.list{
+    font-size: 20px;
+    font-family: 'Love Ya Like A Sister', serif;
+}
+
+ul {
+    left: 20px;
+    list-style: none outside none;
+}
+
+li {
+    float: left;
+    display: block;
+    height: 40px;
 }
