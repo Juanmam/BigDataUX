@@ -6,6 +6,7 @@
 
 @section ('content')
 <div class="content-list">
+  <p> Word: {!! $word !!} </p>
   <div class="list">
     <ul>
       @foreach ($results as $word)
