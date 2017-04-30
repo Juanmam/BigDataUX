@@ -15,4 +15,6 @@ Route::get('/','SearchController@view');
 
 Route::get('/result','QueryController@view');
 
+Route::get('/about','AboutController@view');
+
 Route::post('/searching','SearchController@search');

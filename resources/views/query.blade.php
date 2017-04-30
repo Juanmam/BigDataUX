@@ -2,19 +2,19 @@
 
 @extends ('layouts.layout',
 ['title'  => "Search"],
-['header' => array(array("/","About"))])
+['header' => array(array("/about","About"))])
 
 @section ('content')
 <div class="content-list">
-  <p> Word: {!! $word !!} </p>
   <div class="list">
     <ul>
-      @foreach ($results as $word)
       <li>
 	{!! $word !!}
+	<br>
+	<!-- Can add a foreach files if passed as array -->
+	{!! $files !!}
       </li>
-      <br>
-      @endforeach
+      <br><br>
     </ul>
   </div>
 </div>

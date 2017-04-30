@@ -13,9 +13,17 @@ class SearchController extends Controller {
 
       public function search(){
       	  $word = request('word');
-      	  //$results = array('monday','food','dog');
-	  $db = \DB::connection('mongodb')->getMongoClient();
-	  $results = \DB::collection('felipe')->get();
-          return view('query', array('word' => $word, 'results' => $results[0]));
+	  //$db = \DB::connection('mongodb')->getMongoClient();
+	  //$results = \DB::collection('felipe')->get();
+	  $Book = \DB::collection('felipe')->where('word', $word)->first();
+	  //$results = \DB::collection('felipe')->where('word','!')->first();
+	  $results = json_decode(json_encode($Book));
+	  //return ($array->files);
+	  if(empty((array)$results)) {
+	      $warning = "No results found.";
+	      return view('query', array('word' => '', 'files' => $warning));
+          } else {  	
+	      return view('query', array('word' => $word, 'files' => $results->files));	 	
+	  }
       }
 }

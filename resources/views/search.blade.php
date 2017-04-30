@@ -2,7 +2,7 @@
 
 @extends ('layouts.layout',
          ['title'  => "Search"],
-         ['header' => array(array("/","About"))])
+         ['header' => array(array("/about","About"))])
 
 @section ('content')
 <div class="content" id="center-ish">
