@@ -14,8 +14,8 @@ class SearchController extends Controller {
       public function search(){
       	  $word = request('word');
       	  //$results = array('monday','food','dog');
-	  //$results = \DB::connection('mongodb')->getMongoClient();
+	  $db = \DB::connection('mongodb')->getMongoClient();
 	  $results = \DB::collection('felipe')->get();
-          return view('query', array('word' => $word, 'results' => $results));
+          return view('query', array('word' => $word, 'results' => $results[0]));
       }
 }
