@@ -43,9 +43,25 @@ html, body {
     font-family: 'Love Ya Like A Sister', serif;
 }
 
-.list{
+.list {
     font-size: 20px;
     font-family: 'Love Ya Like A Sister', serif;
+}
+
+.results {
+    font-family: 'Suravaram', serif;
+}
+
+#search-btn{
+    width: 150px;
+}
+
+#results-font-word {
+    font-size: 25px;
+}
+
+#results-font {
+    font-size: 20px;
 }
 
 ul {
